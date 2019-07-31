@@ -1,21 +1,47 @@
 var dropbtn = $(".dropbtn");
-var myDropdown = $("#myDropdown");
+var myDropdown = $(".dropdown-content");
+var bell = $('#bellevue');
+var issy = $("#issaquah");
+var red = $("#redmond");
+var slu = $("#slu");
+var uw = $("#uw");
+var bellevent= $("#bellevuelocation");
+var issyevent= $("#issaquahlocation");
+var redevent= $("#redmondlocation");
+var sluevent= $("#slulocation");
+var uwevent= $("#uwlocation");
+var eventsContainer = $(".eventsContainer");
 
-// dropbtn.on("click", showLocations);
-// function showLocations(){
-//   myDropdown.classList.toggle('show');
-//}
+$(".dropbtn").click(function(){
+  $(".dropdown-content").toggle();
+});
 
-//code to get rid of dropdown box... but it doesnt work :(
-dropbtn = function(e) {
-  console.log("first check")
- if (!e.target.matches('.dropbtn')) {
-   console.log("second check")
- var myDropdown = $('#myDropdown');
- var dropbtn = $(".dropbtn");
-   if (myDropdown.classList.contains('show')) {
-     myDropdown.classList.remove('show');
-     console.log("third check");
-   }
- }
-}
+$("#bellevue").click(function(){
+  $('.eventsContainer').hide();
+  $(".showEvent").empty();
+  $(".showEvent").append(bellevent);
+});
+
+$("#issaquah").click(function(){
+  $('.eventsContainer').hide();
+  $(".showEvent").empty();
+  $(".showEvent").append(issyevent);
+});
+
+$("#redmond").click(function(){
+  $('.eventsContainer').hide();
+  $(".showEvent").empty();
+  $(".showEvent").append(redevent);
+});
+
+$("#slu").click(function(){
+  $('.eventsContainer').hide();
+  $(".showEvent").empty();
+  $(".showEvent").append(sluevent);
+});
+
+$("#uw").click(function(){
+  $('.eventsContainer').hide();
+  $(".showEvent").empty();
+  $(".showEvent").append(uwevent);
+});
