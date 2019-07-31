@@ -1,17 +1,21 @@
 var dropbtn = $(".dropbtn");
-var myDropdown = $(".myDropdown");
+var myDropdown = $("#myDropdown");
 
-button.on("click", showDrop);
+// dropbtn.on("click", showLocations);
+// function showLocations(){
+//   myDropdown.classList.toggle('show');
+//}
 
-function showDrop(){
-  myDropdown.dropdown("toggle");
-}
 //code to get rid of dropdown box... but it doesnt work :(
-window.onclick = function(e) {
+dropbtn = function(e) {
+  console.log("first check")
  if (!e.target.matches('.dropbtn')) {
- var myDropdown = myDropdown;
+   console.log("second check")
+ var myDropdown = $('#myDropdown');
+ var dropbtn = $(".dropbtn");
    if (myDropdown.classList.contains('show')) {
      myDropdown.classList.remove('show');
+     console.log("third check");
    }
  }
 }
