@@ -5,6 +5,7 @@ var issy = $("#issaquah");
 var red = $("#redmond");
 var slu = $("#slu");
 var uw = $("#uw");
+
 var bellevent= $("#bellevuelocation");
 var issyevent= $("#issaquahlocation");
 var redevent= $("#redmondlocation");
